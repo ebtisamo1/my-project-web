@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #d1f7d1, #c3e8c3);
+    color: #1f3d1f;
+    line-height: 1.7;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: #e2f6e2;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(15, 80, 26, 0.15);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.7rem;
+    color: #2f6a3e;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    color: #3a9e59;
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+.image-section img {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 15px;
+    transition: all 0.4s ease;
+}
+
+.image-section img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(60, 176, 95, 0.3);
+}
+
+.content-box {
+    background: linear-gradient(145deg, #e2f6e2, #d1f7d1);
+    padding: 22px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(15, 80, 26, 0.1);
+    transition: all 0.3s ease;
+}
+
+.content-box:hover {
+    transform: translateY(-5px);
+}
+
+.content-box h2 {
+    margin-bottom: 12px;
+    color: #2f6a3e;
+    transition: color 0.3s ease;
+}
+
+.content-box h2:hover {
+    color: #4caf50;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+ul li:hover {
+    color: #3a9e59;
+    transform: translateX(6px);
+}
+
+a {
+    color: #062207;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #0d3b1b;
+    left: 0;
+    bottom: -3px;
+    transition: 0.3s;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+.contact p {
+    margin-bottom: 8px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid #c8f1c8;
+    color: #2f6a3e;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    .container {
+        padding: 20px;
+    }
+}
